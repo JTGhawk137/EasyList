@@ -1,0 +1,9 @@
+name: EasyList
+main: me.jtghawk137.easylist.EasyList
+author: JTGhawk137
+description: List to see how many players and how many staff are online
+version: 1.0.0
+commands:
+    list:
+        description: list of staff and players online
+        usage: /<command>
