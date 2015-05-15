@@ -36,6 +36,7 @@ public class EasyList extends JavaPlugin {
 
     private void registerCommands() {
        getCommand("list").setExecutor(new ListCommand());
+       getCommand("easylist").setExecutor(new EasyListCommand());
     }
 
     public String getVersion() {

@@ -7,7 +7,6 @@ import java.util.ArrayList;
 public class Utils {
 
     private ArrayList<String> staffList = new ArrayList<>();
-    private int players;
 
     public void getStaff() {
         for(Player p : Bukkit.getOnlinePlayers()) {
@@ -21,6 +20,7 @@ public class Utils {
     }
 
     public void removeStaff(Player p) {
+        if(staffList.contains(p.getDisplayName()))
         staffList.remove(p.getDisplayName());
     }
 
@@ -31,6 +31,8 @@ public class Utils {
     }
 
     public int getAmountOfPlayers() {
+        int players = 0;
+
         for(Player p : Bukkit.getOnlinePlayers()) {
             players++;
         }
