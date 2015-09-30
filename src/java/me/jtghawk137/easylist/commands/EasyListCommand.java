@@ -14,6 +14,7 @@ public class EasyListCommand implements CommandExecutor {
             System.out.println("Author: JTGhawk137");
             System.out.println("Version: " + EasyList.getInstance().getVersion());
             System.out.println("Commands: /list, /easylist");
+            return true;
         }
 
         Player p = (Player) commandSender;
